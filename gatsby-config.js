@@ -59,7 +59,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Looking for a good title`,
-        short_name: `GatsbyJS`,
+        short_name: `isong-blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
