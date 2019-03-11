@@ -5,7 +5,7 @@ based on https://github.com/gatsbyjs/gatsby-starter-blog
 ## Install Gatsby CLI
 
 ```bash
-npn install --gloabl gatsby-cli
+npm install --global gatsby-cli
 ```
 
 ## Create a site based on the blog template
@@ -13,4 +13,10 @@ npn install --gloabl gatsby-cli
 ```bash
 # create a new Gatsby site using the blog starter
 gatsby new isong-blog https://github.com/gatsbyjs/gatsby-starter-blog
+```
+
+## Run a development server
+
+```bash
+gatsby develop
 ```
