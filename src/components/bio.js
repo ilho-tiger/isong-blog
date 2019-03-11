@@ -11,7 +11,13 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
+import SocialLogo from 'social-logos';
+
 function Bio() {
+  function clickSocialLink(url) {
+    window.open(url, "_blank");
+  }
+
   return (
     <StaticQuery
       query={bioQuery}
@@ -38,11 +44,13 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{Ilho Song}</strong> Living in a happy life w/ a lovely wife. Software Architect | Application Security Expert | Full-stack Developer | Intelligent systems
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
+              Written by <strong>{author}</strong>, living in a happy life w/ a lovely wife. <br/>
+              <span style={{ cursor: 'pointer' }}>
+                <SocialLogo icon="twitter" size={32} onClick={() => clickSocialLink(`https://twitter.com/${social.twitter}`)} />
+              </span>
+              <span style={{ cursor: 'pointer' }}>
+                <SocialLogo icon="github" size={32} onClick={() => clickSocialLink(`https://github.com/${social.github}`)} />
+              </span>
             </p>
           </div>
         )
@@ -64,7 +72,8 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
-          twitter
+          twitter,
+          github
         }
       }
     }

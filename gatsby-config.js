@@ -2,10 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Looking for a good title`,
     author: `Ilho Song`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A blog demonstrating whatever.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `terasia`,
+      twitter: `ilho_song`,
+      github: `ilho-tiger`
     },
   },
   plugins: [
