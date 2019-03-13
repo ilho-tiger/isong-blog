@@ -1,0 +1,14 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "develop",
+            "type": "process",
+            "command": "/home/isong/.nvm/versions/node/v8.11.3/bin/gatsby",
+            "args": ["develop"],
+            "problemMatcher": []
+        }
+    ]
+}
