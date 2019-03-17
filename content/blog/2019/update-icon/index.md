@@ -10,4 +10,4 @@ While I am still learning about ReactJS and Gatsby for improviing this site's lo
 
 Well, if you know well you probably already guessed I did my best in the drawing. Below is the final result. I also update the site's icon so it does not show the unintersting (sorry, Gatsby developers!) Gatsby logo anymore.
 
-![final image](./tiger_by_tiger.png)
+![final image](./tiger.jpg)
