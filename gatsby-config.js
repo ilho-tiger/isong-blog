@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Looking for a good title`,
+    title: `Tiger In The Dev Jungle`,
     author: `Ilho Song`,
     description: `A blog demonstrating whatever.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -8,6 +8,7 @@ module.exports = {
       twitter: `ilho_song`,
       github: `ilho-tiger`
     },
+    theme_color: `#ffa200`,
   },
   plugins: [
     {
@@ -32,6 +33,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              wrapperStyle: `margin-bottom: 0px`,
             },
           },
           {
@@ -43,6 +45,13 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          {
+            resolve: `gatsby-remark-figure-caption`,
+            options: {
+              figureClassName: 'md-figure',
+              imageClassName: 'md-image',
+            },
+          },
         ],
       },
     },
@@ -58,8 +67,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Looking for a good title`,
-        short_name: `isong-blog`,
+        name: `isong.dev`,
+        short_name: `isong.dev`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffa200`,
@@ -76,16 +85,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-figure-caption`,
-            options: {figureClassName: 'md-figure'},
-          },
-        ],
-      },
-    },
   ],
 }

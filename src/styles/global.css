@@ -4,3 +4,13 @@ body {
     line-height: 22px;
     margin: 0px;
 }
+
+.md-figure {
+    color: #555555;
+    font-style: italic;
+    margin-bottom: 1.75rem;
+}
+
+.md-image {
+    margin: 0px;
+}

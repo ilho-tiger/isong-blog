@@ -7,15 +7,17 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
+
     let header
 
     if (location.pathname === rootPath) {
       header = (
         <h1
           style={{
-            ...scale(1.5),
+            ...scale(1.0),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            color: `#ffa200`,
           }}
         >
           <Link
@@ -36,6 +38,7 @@ class Layout extends React.Component {
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
+            color: `#ffa200`,
           }}
         >
           <Link
@@ -46,7 +49,7 @@ class Layout extends React.Component {
             }}
             to={`/`}
           >
-            {title}
+            &lt; {title}
           </Link>
         </h3>
       )
