@@ -76,5 +76,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-figure-caption`,
+            options: {figureClassName: 'md-figure'},
+          },
+        ],
+      },
+    },
   ],
 }
