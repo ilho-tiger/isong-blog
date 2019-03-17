@@ -62,7 +62,7 @@ module.exports = {
         short_name: `isong-blog`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#ffa200`,
         display: `minimal-ui`,
         icon: `content/assets/tiger_by_tiger.png`,
       },
