@@ -16,7 +16,7 @@ RUN apk add --no-cache --virtual .timezone \
     && echo "America/New_York" >  /etc/timezone \
     && apk del .timezone \
     && apk add --no-cache --virtual .op-deps \
-        git
+        git openssh
 
 ARG USER=isong
 ENV HOME /home/${USER}/
@@ -27,4 +27,7 @@ RUN adduser -D ${USER} -s /bin/sh
 # hugo command binary (build result from above)
 COPY --from=builder /go/bin/hugo /usr/local/bin/hugo
 
+USER ${USER}
 WORKDIR ${HOME}
+
+RUN mkdir -p ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts

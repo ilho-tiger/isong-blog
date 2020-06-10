@@ -4,3 +4,5 @@ services:
     hugo:
         build: .
         image: tiger/hugo:latest
+        volumes:
+            - ~/.ssh/id_rsa:/home/isong/.ssh/id_rsa
