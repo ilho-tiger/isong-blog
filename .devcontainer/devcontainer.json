@@ -26,7 +26,8 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"knisterpeter.vscode-commitizen"
+		"knisterpeter.vscode-commitizen",
+		"bungcip.better-toml"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
