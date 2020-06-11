@@ -1,0 +1,3 @@
+[submodule "isong.dev/themes/hugo-theme-okayish-blog"]
+	path = isong.dev/themes/hugo-theme-okayish-blog
+	url = https://github.com/kongdivin/hugo-theme-okayish-blog.git

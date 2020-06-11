@@ -1,0 +1,6 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Tiger's DevDen"
+
+theme = "hugo-theme-okayish-blog"
+

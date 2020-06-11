@@ -4,6 +4,14 @@
 
 My personal/developer blog which will be hosted on https://blog.isong.dev (eventually. Currently it is just a git repo).
 
+## Cloning Hugo theme being used
+
+Hugo themes being used by this site are managed as git submodules. You have to pull in the theme submodule after cloning your repository using the following command:
+
+```bash
+git submodule update --init
+```
+
 ## Hugo commands
 
 Create a new Site

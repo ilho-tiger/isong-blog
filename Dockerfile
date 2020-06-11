@@ -16,7 +16,7 @@ RUN apk add --no-cache --virtual .timezone \
     && echo "America/New_York" >  /etc/timezone \
     && apk del .timezone \
     && apk add --no-cache --virtual .op-deps \
-        git openssh
+        git openssh python3
 
 ARG USER=isong
 ENV HOME /home/${USER}/
