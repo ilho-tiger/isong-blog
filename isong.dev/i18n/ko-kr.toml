@@ -1,0 +1,62 @@
+[jumpToMainContent]
+other = "Jump to main content"
+
+[search]
+other = "사이트 검색"
+
+[posts]
+other = "Blog Posts"
+
+[previous]
+other = "이전 포스트"
+
+[next]
+other = "다음 포스트"
+
+# Terms
+
+[category]
+other = "카테고리"
+
+[categories]
+other = "카테고리"
+
+[tag]
+other = "태그"
+
+[tags]
+other = "태그"
+
+[author]
+other = "글쓰는 사람"
+
+[authors]
+other = "글쓰는 사람"
+
+[colon]
+other = ":"
+
+# Post
+
+[byAuthor]
+other = "By"
+
+[onDate]
+other = "작성일:"
+
+[translations]
+other = "Available in:"
+
+[readMore]
+other = "더 읽기"
+
+# Share
+
+[shareOnFacebook]
+other = "패이스북으로 공유하기"
+
+[shareOnTwitter]
+other = "트위터로 공유하기"
+
+[shareOnLinkedIn]
+other = "링크트인으로 공유하기"
