@@ -1,0 +1,12 @@
+:root {
+    --main-color:#FFA200;
+    --light-main-color: #FFD180;
+}
+
+.p-navigation {
+    background-color: var(--main-color);
+}
+
+.page-banner {
+    background-color: var(--light-main-color);
+}
